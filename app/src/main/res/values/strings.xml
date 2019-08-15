@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AppReportSena</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="camara">Camara</string>
+    <string name="lista">Lista</string>
+    <string name="acercade">Acerca de</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tusreportes">Tus Reportes:</string>
+    <string name="reportar">Reportar</string>
+    <string name="Titulo">Titulo</string>
+    <string name="guardar">Guardar</string>
+</resources>
