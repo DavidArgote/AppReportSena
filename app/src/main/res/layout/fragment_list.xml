@@ -8,7 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorWithe">
 
         <TextView
             android:id="@+id/textView"
@@ -17,15 +18,19 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/tusreportes"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ListView
             android:id="@+id/lvLista"
+            style="@style/Widget.AppCompat.ListView.DropDown"
             android:layout_width="match_parent"
             android:layout_height="600dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
+            android:listSelector="@color/colorWithe"
+            android:scrollbarThumbHorizontal="@color/colorWithe"
+            android:scrollbarThumbVertical="@color/colorWithe"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />

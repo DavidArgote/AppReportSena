@@ -13,4 +13,7 @@
     <string name="reportar">Reportar</string>
     <string name="Titulo">Titulo</string>
     <string name="guardar">Guardar</string>
+    <string name="desarrlladopor">Desarrollado por</string>
+    <string name="myname">David Argote</string>
+    <string name="decApp">ReportSena es una aplicación que sirve para reportar daños en los equipos del área de ADSI</string>
 </resources>

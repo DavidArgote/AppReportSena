@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.davidargote.appreportsena.R;
+import com.davidargote.appreportsena.model.ManagerHelper;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -17,6 +18,9 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        ManagerHelper managerHelper = new ManagerHelper(this);
+        managerHelper.openDbWr();
+        managerHelper.closeDb();
 
         Timer timer = new Timer();
 

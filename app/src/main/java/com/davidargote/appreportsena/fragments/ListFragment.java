@@ -13,6 +13,11 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.davidargote.appreportsena.R;
+import com.davidargote.appreportsena.model.AdapterList;
+import com.davidargote.appreportsena.model.ManagerHelper;
+import com.davidargote.appreportsena.model.Report;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -37,6 +42,10 @@ public class ListFragment extends Fragment {
 
         lvList = view.findViewById(R.id.lvLista);
 
+        ManagerHelper managerHelper = new ManagerHelper(getContext());
+        ArrayList<Report> list = new ArrayList<>(managerHelper.listReports());
+        AdapterList adapterList = new AdapterList(getContext(), list);
+        lvList.setAdapter(adapterList);
 
     }
 }
